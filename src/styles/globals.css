@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 99 102 241;
+    --secondary: 16 185 129;
+    --accent: 245 158 11;
+    --background: 249 250 251;
+    --foreground: 17 24 39;
+  }
+}
+
+@layer components {
+  .gradient-brand {
+    @apply bg-gradient-to-br from-primary to-indigo-700;
+  }
+
+  .gradient-success {
+    @apply bg-gradient-to-br from-secondary to-emerald-600;
+  }
+
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-lg border border-gray-200;
+  }
+}
